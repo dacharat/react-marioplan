@@ -31,7 +31,7 @@ class CreateProject extends Component {
           <div className="input-field">
             <label htmlFor="content">Content</label>
             <textarea
-              id="context"
+              id="content"
               className="materialize-textarea"
               onChange={this.handleChange}
             />

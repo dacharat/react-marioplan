@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import SigninLinks from "./SignedinLinks";
 import SignoutLinks from "./SignoutLinks";
+import {connect} from 'react-redux'
 
 const Nav = () => {
   return (
@@ -10,11 +11,15 @@ const Nav = () => {
         <Link to="/" className="brand-logo">
           MarioPlan
         </Link>
-        <SignoutLinks />
         <SigninLinks />
+        <SignoutLinks />
       </div>
     </nav>
   );
 };
 
-export default Nav;
+const mapStateToProps = state => {
+  return {}
+}
+
+export default connect(mapStateToProps)(Nav);
